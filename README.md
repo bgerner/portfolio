@@ -12,3 +12,4 @@ Screenshots:
 
 
 Link to deployed application:
+https://bgerner.github.io/portfolio/
