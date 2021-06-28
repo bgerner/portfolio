@@ -9,7 +9,11 @@
     box-sizing: border-box;
 }
 body {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: -webkit-linear-gradient(var(--one), var(--two));
+  width: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 header {
     padding: 20px 40px;
@@ -72,10 +76,11 @@ section {
 .heroli {
     height: 40vh;
     flex-grow: 1;
-    width: 33.333%
+    width: 33.333%;
 }
 .heroimage {
     max-height:100%;
+    height:700px;
     min-width: 100%;
     object-fit:cover;
     vertical-align:bottom;
@@ -149,7 +154,7 @@ section {
     margin: 20px 20px;
     text-decoration: none;
 }
-.applications{
+.applications {
     display:flex;
     justify-content:space-between;
     align-items: center;
@@ -257,6 +262,14 @@ footer {
     }
     
 }
+
+@media screen and (max-width: 669px) {
+    .hero {
+        background-image: url("../imgs/wolflogo.PNG");
+    }
+}
+
+
 @media screen and (max-width: 515px) {
     #application1 {
         width: 200px;
